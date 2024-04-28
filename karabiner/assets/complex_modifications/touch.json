@@ -1,0 +1,56 @@
+{
+	"title": "Tab mod",
+		"maintainers": [
+			"ned3si"
+		],
+		"rules": [
+		{
+			"description": "tab modifiers",
+			"manipulators": [{
+				"from": {
+					"key_code": "tab",
+					"modifiers": {
+						"optional": [
+							"any"
+						]
+					}
+				},
+				"to_if_alone": [{
+					"key_code": "tab",
+					"modifiers": []
+				}],
+				"to": [{
+					"set_variable": {
+						"name": "tab_down",
+						"value": 1,
+						"key_up_value": 0
+					}
+				}],
+				"type": "basic"
+			}
+			]
+		},
+		{
+			"description": "caps modifiers",
+			"manipulators": [{
+				"from": {
+					"key_code": "caps_lock",
+					"modifiers": {
+						"optional": [
+							"any"
+						]
+					}
+				},
+				"to": [{
+					"set_variable": {
+						"name": "caps_down",
+						"value": 1,
+						"key_up_value": 0
+					}
+				}],
+				"type": "basic"
+			}
+			]
+		}
+		]
+}
