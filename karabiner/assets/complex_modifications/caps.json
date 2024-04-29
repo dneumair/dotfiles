@@ -1,11 +1,11 @@
 {
-	"title": "caps enter esc",
+	"title": "caps",
 	"maintainers": [
 		"ned3si"
 	],
 	"rules": [
 		{
-			"description": "caps enter esc",
+			"description": "brackets",
 			"manipulators": [
 				{
 					"conditions": [
@@ -129,6 +129,108 @@
 							"modifiers": [
 								"right_option"
 							]
+						}
+					],
+					"type": "basic"
+				},
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "comma"
+					},
+					"to": [
+						{
+							"key_code": "grave_accent_and_tilde",
+							"modifiers": []
+						}
+					],
+					"type": "basic"
+				},
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "period"
+					},
+					"to": [
+						{
+							"key_code": "grave_accent_and_tilde",
+							"modifiers": [
+								"right_shift"
+							]
+						}
+					],
+					"type": "basic"
+				}
+			]
+		},
+		{
+			"description": "enter esc semicolon",
+			"manipulators": [
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "semicolon"
+					},
+					"to": [
+						{
+							"key_code": "comma",
+							"modifiers": [
+								"right_shift"
+							]
+						}
+					],
+					"type": "basic"
+				},
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "n"
+					},
+					"to": [
+						{
+							"key_code": "return_or_enter"
+						}
+					],
+					"type": "basic"
+				},
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "m"
+					},
+					"to": [
+						{
+							"key_code": "escape"
 						}
 					],
 					"type": "basic"
