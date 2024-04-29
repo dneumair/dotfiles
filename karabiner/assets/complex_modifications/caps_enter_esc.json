@@ -1,0 +1,139 @@
+{
+	"title": "caps enter esc",
+	"maintainers": [
+		"ned3si"
+	],
+	"rules": [
+		{
+			"description": "caps enter esc",
+			"manipulators": [
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "k"
+					},
+					"to": [
+						{
+							"key_code": "8",
+							"modifiers": [
+								"right_shift"
+							]
+						}
+					],
+					"type": "basic"
+				},
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "l"
+					},
+					"to": [
+						{
+							"key_code": "9",
+							"modifiers": [
+								"right_shift"
+							]
+						}
+					],
+					"type": "basic"
+				},
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "i"
+					},
+					"to": [
+						{
+							"key_code": "8",
+							"modifiers": [
+								"right_option"
+							]
+						}
+					],
+					"type": "basic"
+				},
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "o"
+					},
+					"to": [
+						{
+							"key_code": "9",
+							"modifiers": [
+								"right_option"
+							]
+						}
+					],
+					"type": "basic"
+				},
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "u"
+					},
+					"to": [
+						{
+							"key_code": "7",
+							"modifiers": [
+								"right_option"
+							]
+						}
+					],
+					"type": "basic"
+				},
+				{
+					"conditions": [
+						{
+							"type": "variable_if",
+							"name": "caps_down",
+							"value": 1
+						}
+					],
+					"from": {
+						"key_code": "p"
+					},
+					"to": [
+						{
+							"key_code": "0",
+							"modifiers": [
+								"right_option"
+							]
+						}
+					],
+					"type": "basic"
+				}
+			]
+		}
+	]
+}

@@ -8,12 +8,7 @@
 			"description": "tab modifiers",
 			"manipulators": [{
 				"from": {
-					"key_code": "tab",
-					"modifiers": {
-						"optional": [
-							"any"
-						]
-					}
+					"key_code": "tab"
 				},
 				"to_if_alone": [{
 					"key_code": "tab",
