@@ -53,5 +53,34 @@
 			"type": "basic"
 		}
 		]
-	}]
+	},
+{
+	"description" : "tab-n = enter,tab-m = esc",
+	"manipulators" :[
+		{
+			"conditions": [{
+				"type": "variable_if",
+				"name": "tab_down",
+				"value": 1
+			}],
+			"from": {"key_code": "n"},
+			"to": [{
+				"key_code": "return_or_enter"
+			}],
+			"type": "basic"
+		},
+		{
+			"conditions": [{
+				"type": "variable_if",
+				"name": "tab_down",
+				"value": 1
+			}],
+			"from": {"key_code": "m"},
+			"to": [{
+				"key_code": "escape"
+			}],
+			"type": "basic"
+		}
+	]
+}]
 }
