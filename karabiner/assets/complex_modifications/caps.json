@@ -311,6 +311,32 @@
           "type": "basic"
         }
       ]
+    },
+    {
+      "description": "caps-# = \\",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "caps_down",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "backslash"
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "right_alt"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
     }
   ]
 }
