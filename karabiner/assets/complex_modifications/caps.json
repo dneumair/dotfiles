@@ -389,6 +389,30 @@
           "type": "basic"
         }
       ]
+    },
+    {
+      "description": "shift-shift = capslock",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "caps_down",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "right_shift",
+            "modifiers":[]
+          },
+          "to": [
+            {
+              "key_code": "caps_lock"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
     }
   ]
 }
